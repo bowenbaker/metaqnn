@@ -11,7 +11,7 @@ layer {
     crop_size: 32
   }
   data_param {
-    source: "/home/peterldowns/work/data/cifar10_gcn/train.lmdb"
+    source: "train.lmdb"
     batch_size: 128
     backend: LMDB
   }
@@ -25,7 +25,7 @@ layer {
     phase: TEST
   }
   data_param {
-    source: "/home/peterldowns/work/data/cifar10_gcn/val.lmdb"
+    source: "val.lmdb"
     batch_size: 100
     backend: LMDB
   }

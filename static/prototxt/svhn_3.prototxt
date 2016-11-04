@@ -10,7 +10,7 @@ layer {
     mirror: false
   }
   data_param {
-    source: "/home/peterldowns/work/data/svhn_gcn_lcn/train.lmdb"
+    source: "train.lmdb"
     batch_size: 128
     backend: LMDB
   }
@@ -24,7 +24,7 @@ layer {
     phase: TEST
   }
   data_param {
-    source: "/home/peterldowns/work/data/svhn_gcn_lcn/val.lmdb"
+    source: "val.lmdb"
     batch_size: 100
     backend: LMDB
   }

@@ -13,8 +13,8 @@
         <ul class='nav'>
             <li><a href='#about'> About </a></li>
             <li><a href='#cifar10'> CIFAR10 </a></li>
-            <li><a href='#mnist'> MNIST </a></li>
             <li><a href='#svhn'> SVHN </a></li>
+            <li><a href='#mnist'> MNIST </a></li>
             <li><a href='#team'> Team </a></li>
         </ul>
 
@@ -22,7 +22,7 @@
         <hr>
 
         <h1 id='about'> About </h1>
-        <p>We propose a meta-modeling approach based on reinforcement learning to automatically generate high-performing CNN architectures for a given learning task. The learning agent is trained to sequentially choose CNN layers using Q-learning with an &epsilon;-greedy exploration strategy and experience replay. The agent explores a large but finite space of possible architectures and iteratively discovers designs with improved performance on the learning task. On image classification benchmarks, the agent-designed networks (consisting of only standard convolution, pooling, and fully-connected layers) beat existing networks designed with the same layer types, and are competitive against the state-of-the-art methods that use more complex layer types. We also outperform existing network design meta-modeling approaches on image classification.</p>
+        <p>In our paper <b>Designing Neural Network Architectures Using Reinforcement Learning</b>, we propose a meta-modeling approach based on reinforcement learning to automatically generate high-performing CNN architectures for a given learning task. The learning agent is trained to sequentially choose CNN layers using Q-learning with an &epsilon;-greedy exploration strategy and experience replay. The agent explores a large but finite space of possible architectures and iteratively discovers designs with improved performance on the learning task. On image classification benchmarks, the agent-designed networks (consisting of only standard convolution, pooling, and fully-connected layers) beat existing networks designed with the same layer types, and are competitive against the state-of-the-art methods that use more complex layer types. We also outperform existing network design meta-modeling approaches on image classification.</p>
         <h2 id='cifar10'> CIFAR10 </h2>
         <div class='results'>
             <div class='result-row'>
@@ -35,7 +35,7 @@
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis' id='cifar10C128_5_1_C512_3_1_D1_4_P2_2_C128_1_1_D2_4_C128_5_1_P3_2_D3_4_C512_3_1_SM10'>
+                    <div class='result-vis'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -96,7 +96,7 @@
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis' id='cifar10C256_3_1_C128_1_1_D1_3_C128_3_1_C128_3_1_D2_3_P5_3_C128_3_1_D3_3_SM10'>
+                    <div class='result-vis'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -153,7 +153,7 @@
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis' id='cifar10C64_3_1_C128_3_1_D1_5_P5_3_C256_3_1_D2_5_P3_2_FC512_D3_5_FC128_D4_5_SM10'>
+                    <div class='result-vis'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -218,7 +218,7 @@
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis' id='cifar10C64_5_1_C512_3_1_D1_5_C512_1_1_C64_1_1_D2_5_C128_5_1_P3_2_D3_5_C512_5_1_C512_3_1_D4_5_P5_3_SM10'>
+                    <div class='result-vis'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -291,7 +291,7 @@
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis' id='cifar10C128_5_1_C512_3_1_D1_3_P2_2_C128_1_1_D2_3_C128_5_1_P3_2_D3_3_SM10'>
+                    <div class='result-vis'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -348,7 +348,7 @@
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis' id='cifar10C64_3_1_C64_3_1_D1_3_P5_3_C256_3_1_D2_3_C128_5_1_SM10'>
+                    <div class='result-vis'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -389,12 +389,7 @@
             </div>
         </div>
         <hr>
-        <h2 id="mnist"> MNIST </h2>
-        <div class='results'>
 
-            <div class='result-row missing'> Coming Soon </div>
-        </div>
-        <hr>
         <h2 id='svhn'> SVHN </h2>
         <div class='results'>
             <div class='result-row'>
@@ -407,7 +402,7 @@
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis' id='svhnC64_1_1_C128_3_1_D1_6_C64_5_1_C512_5_1_D2_6_C256_1_1_C256_5_1_D3_6_C128_1_1_C256_5_1_D4_6_P3_2_C512_5_1_D5_6_C256_3_1_C128_3_1_D6_6_SM10'>
+                    <div class='result-vis'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -500,7 +495,7 @@
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis' id='svhnC128_1_1_C256_5_1_D1_6_C128_5_1_P2_2_D2_6_C256_5_1_C256_1_1_D3_6_C256_3_1_C256_3_1_D4_6_C256_5_1_C512_5_1_D5_6_C256_3_1_C128_3_1_D6_6_SM10'>
+                    <div class='result-vis'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -593,7 +588,7 @@
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis' id='svhnC128_5_1_C128_3_1_D1_5_C64_5_1_P5_3_D2_5_C128_3_1_C512_5_1_D3_5_C256_5_1_C128_5_1_D4_5_C128_5_1_C128_3_1_D5_5_SM10'>
+                    <div class='result-vis'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -674,7 +669,7 @@
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis' id='svhnC128_3_1_P2_2_D1_6_C64_1_1_C256_1_1_D2_6_C256_5_1_C128_1_1_D3_6_C128_5_1_C512_3_1_D4_6_C256_5_1_C256_1_1_D5_6_C128_3_1_C64_1_1_D6_6_SM10'>
+                    <div class='result-vis'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -767,7 +762,7 @@
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis' id='svhnC128_1_1_C256_5_1_D1_6_C128_5_1_C512_5_1_D2_6_C256_1_1_C256_5_1_D3_6_P5_3_C128_5_1_D4_6_C128_5_1_C128_5_1_D5_6_C64_1_1_C128_5_1_D6_6_SM10'>
+                    <div class='result-vis'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -851,6 +846,14 @@
                 </div>
             </div>
         </div>
+        <hr>
+
+        <h2 id="mnist"> MNIST </h2>
+        <div class='results'>
+
+            <div class='result-row missing'> Coming Soon </div>
+        </div>
+        <hr>
 
 
         <h2 id='team'> Team </h2>
