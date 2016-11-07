@@ -22,7 +22,7 @@
         <hr>
 
         <h1 id='about'> About </h1>
-        <p>In our paper <b>Designing Neural Network Architectures Using Reinforcement Learning</b>, we propose a meta-modeling approach based on reinforcement learning to automatically generate high-performing CNN architectures for a given learning task. The learning agent is trained to sequentially choose CNN layers using Q-learning with an &epsilon;-greedy exploration strategy and experience replay. The agent explores a large but finite space of possible architectures and iteratively discovers designs with improved performance on the learning task. On image classification benchmarks, the agent-designed networks (consisting of only standard convolution, pooling, and fully-connected layers) beat existing networks designed with the same layer types, and are competitive against the state-of-the-art methods that use more complex layer types. We also outperform existing network design meta-modeling approaches on image classification.</p>
+        <p>In our paper <b><a class='invert' href="static/baker_et_al_reinforcement_networks_iclr_final.pdf">Designing Neural Network Architectures Using Reinforcement Learning</a></b>, we propose a meta-modeling approach based on reinforcement learning to automatically generate high-performing CNN architectures for a given learning task. The learning agent is trained to sequentially choose CNN layers using Q-learning with an &epsilon;-greedy exploration strategy and experience replay. The agent explores a large but finite space of possible architectures and iteratively discovers designs with improved performance on the learning task. On image classification benchmarks, the agent-designed networks (consisting of only standard convolution, pooling, and fully-connected layers) beat existing networks designed with the same layer types, and are competitive against the state-of-the-art methods that use more complex layer types. We also outperform existing network design meta-modeling approaches on image classification.</p>
         <h2 id='cifar10'> CIFAR10 </h2>
         <div class='results'>
             <div class='result-row'>
@@ -879,5 +879,14 @@
             <p> Peter Downs </p>
         </div>
 
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-86883898-1', 'auto');
+            ga('send', 'pageview');
+        </script>
     </body>
 </html>

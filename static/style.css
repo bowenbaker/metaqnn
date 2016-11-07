@@ -33,6 +33,13 @@ a[disabled] {
     text-decoration: line-through;
     background: #ccc;
 }
+a.invert {
+    background: none;
+    color: #7c85b7;
+    line-height: inherit;
+    padding: 0;
+    margin: 0;
+}
 h2 {
     margin-top: 40px;
 }
@@ -115,7 +122,7 @@ body {
     margin-top: 10px;
     width: 100%;
     text-align: left;
-    padding: 20px;
+    padding: 20px 0;
     font-family: Helvetica, Arial, Sans-Serif;
     box-sizing: border-box;
 }
@@ -194,12 +201,13 @@ body {
 }
 .team-member {
     display: inline-block;
-    padding: 20px;
-    width: 200px;
-    height: 200px;
+    padding: 18px;
+    width: 140px;
+    height: 140px;
 }
 .team-member img {
-    max-width: 200px;
+    max-width: 140px;
+    border-radius: 50%;
 }
 .team-member p {
     text-align: center;
