@@ -13,8 +13,8 @@
         <ul class='nav'>
             <li><a href='#about'> About </a></li>
             <li><a href='#cifar10'> CIFAR10 </a></li>
-            <li><a href='#svhn'> SVHN </a></li>
             <li><a href='#mnist'> MNIST </a></li>
+            <li><a href='#svhn'> SVHN </a></li>
             <li><a href='#team'> Team </a></li>
         </ul>
 
@@ -22,7 +22,7 @@
         <hr>
 
         <h1 id='about'> About </h1>
-        <p>In our paper <b><a class='invert' href="static/baker_et_al_reinforcement_networks_iclr_final.pdf">Designing Neural Network Architectures Using Reinforcement Learning</a></b>, we propose a meta-modeling approach based on reinforcement learning to automatically generate high-performing CNN architectures for a given learning task. The learning agent is trained to sequentially choose CNN layers using Q-learning with an &epsilon;-greedy exploration strategy and experience replay. The agent explores a large but finite space of possible architectures and iteratively discovers designs with improved performance on the learning task. On image classification benchmarks, the agent-designed networks (consisting of only standard convolution, pooling, and fully-connected layers) beat existing networks designed with the same layer types, and are competitive against the state-of-the-art methods that use more complex layer types. We also outperform existing network design meta-modeling approaches on image classification.</p>
+        <p>In our paper, <b>Designing Neural Network Architectures Using Reinforcement Learning</b> (<a class='invert' href='https://arxiv.org/abs/1611.02167'>arxiv</a>, <a class='invert' href='http://openreview.net/pdf?id=S1c2cvqee'>openreview</a>), we propose a meta-modeling approach based on reinforcement learning to automatically generate high-performing CNN architectures for a given learning task. The learning agent is trained to sequentially choose CNN layers using Q-learning with an &epsilon;-greedy exploration strategy and experience replay. The agent explores a large but finite space of possible architectures and iteratively discovers designs with improved performance on the learning task. On image classification benchmarks, the agent-designed networks (consisting of only standard convolution, pooling, and fully-connected layers) beat existing networks designed with the same layer types, and are competitive against the state-of-the-art methods that use more complex layer types. We also outperform existing network design meta-modeling approaches on image classification.</p>
         <h2 id='cifar10'> CIFAR10 </h2>
         <div class='results'>
             <div class='result-row'>
@@ -30,12 +30,12 @@
                 <div class='result-files'>
                     <a href='static/prototxt/cifar10_0.prototxt'>network</a>
                     
+                    <a href='static/solver/cifar10_0_solver.prototxt'>solver</a>
                     
-                    <a disabled>solver</a>
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis'>
+                    <div class='result-vis' id='cifar10C128_5_1_C512_3_1_D1_4_P2_2_C128_1_1_D2_4_C128_5_1_P3_2_D3_4_C512_3_1_SM10'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -91,12 +91,12 @@
                 <div class='result-files'>
                     <a href='static/prototxt/cifar10_1.prototxt'>network</a>
                     
+                    <a href='static/solver/cifar10_1_solver.prototxt'>solver</a>
                     
-                    <a disabled>solver</a>
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis'>
+                    <div class='result-vis' id='cifar10C256_3_1_C128_1_1_D1_3_C128_3_1_C128_3_1_D2_3_P5_3_C128_3_1_D3_3_SM10'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -148,12 +148,12 @@
                 <div class='result-files'>
                     <a href='static/prototxt/cifar10_2.prototxt'>network</a>
                     
+                    <a href='static/solver/cifar10_2_solver.prototxt'>solver</a>
                     
-                    <a disabled>solver</a>
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis'>
+                    <div class='result-vis' id='cifar10C64_3_1_C128_3_1_D1_5_P5_3_C256_3_1_D2_5_P3_2_FC512_D3_5_FC128_D4_5_SM10'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -213,12 +213,12 @@
                 <div class='result-files'>
                     <a href='static/prototxt/cifar10_3.prototxt'>network</a>
                     
+                    <a href='static/solver/cifar10_3_solver.prototxt'>solver</a>
                     
-                    <a disabled>solver</a>
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis'>
+                    <div class='result-vis' id='cifar10C64_5_1_C512_3_1_D1_5_C512_1_1_C64_1_1_D2_5_C128_5_1_P3_2_D3_5_C512_5_1_C512_3_1_D4_5_P5_3_SM10'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -286,12 +286,12 @@
                 <div class='result-files'>
                     <a href='static/prototxt/cifar10_4.prototxt'>network</a>
                     
+                    <a href='static/solver/cifar10_4_solver.prototxt'>solver</a>
                     
-                    <a disabled>solver</a>
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis'>
+                    <div class='result-vis' id='cifar10C128_5_1_C512_3_1_D1_3_P2_2_C128_1_1_D2_3_C128_5_1_P3_2_D3_3_SM10'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -343,12 +343,12 @@
                 <div class='result-files'>
                     <a href='static/prototxt/cifar10_5.prototxt'>network</a>
                     
+                    <a href='static/solver/cifar10_5_solver.prototxt'>solver</a>
                     
-                    <a disabled>solver</a>
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis'>
+                    <div class='result-vis' id='cifar10C64_3_1_C64_3_1_D1_3_P5_3_C256_3_1_D2_3_C128_5_1_SM10'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -389,7 +389,12 @@
             </div>
         </div>
         <hr>
+        <h2 id="mnist"> MNIST </h2>
+        <div class='results'>
 
+            <div class='result-row missing'> Coming Soon </div>
+        </div>
+        <hr>
         <h2 id='svhn'> SVHN </h2>
         <div class='results'>
             <div class='result-row'>
@@ -397,12 +402,12 @@
                 <div class='result-files'>
                     <a href='static/prototxt/svhn_0.prototxt'>network</a>
                     
+                    <a href='static/solver/svhn_0_solver.prototxt'>solver</a>
                     
-                    <a disabled>solver</a>
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis'>
+                    <div class='result-vis' id='svhnC64_1_1_C128_3_1_D1_6_C64_5_1_C512_5_1_D2_6_C256_1_1_C256_5_1_D3_6_C128_1_1_C256_5_1_D4_6_P3_2_C512_5_1_D5_6_C256_3_1_C128_3_1_D6_6_SM10'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -490,12 +495,12 @@
                 <div class='result-files'>
                     <a href='static/prototxt/svhn_1.prototxt'>network</a>
                     
+                    <a href='static/solver/svhn_1_solver.prototxt'>solver</a>
                     
-                    <a disabled>solver</a>
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis'>
+                    <div class='result-vis' id='svhnC128_1_1_C256_5_1_D1_6_C128_5_1_P2_2_D2_6_C256_5_1_C256_1_1_D3_6_C256_3_1_C256_3_1_D4_6_C256_5_1_C512_5_1_D5_6_C256_3_1_C128_3_1_D6_6_SM10'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -583,12 +588,12 @@
                 <div class='result-files'>
                     <a href='static/prototxt/svhn_2.prototxt'>network</a>
                     
+                    <a href='static/solver/svhn_2_solver.prototxt'>solver</a>
                     
-                    <a disabled>solver</a>
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis'>
+                    <div class='result-vis' id='svhnC128_5_1_C128_3_1_D1_5_C64_5_1_P5_3_D2_5_C128_3_1_C512_5_1_D3_5_C256_5_1_C128_5_1_D4_5_C128_5_1_C128_3_1_D5_5_SM10'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -664,12 +669,12 @@
                 <div class='result-files'>
                     <a href='static/prototxt/svhn_3.prototxt'>network</a>
                     
+                    <a href='static/solver/svhn_3_solver.prototxt'>solver</a>
                     
-                    <a disabled>solver</a>
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis'>
+                    <div class='result-vis' id='svhnC128_3_1_P2_2_D1_6_C64_1_1_C256_1_1_D2_6_C256_5_1_C128_1_1_D3_6_C128_5_1_C512_3_1_D4_6_C256_5_1_C256_1_1_D5_6_C128_3_1_C64_1_1_D6_6_SM10'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -757,12 +762,12 @@
                 <div class='result-files'>
                     <a href='static/prototxt/svhn_4.prototxt'>network</a>
                     
+                    <a href='static/solver/svhn_4_solver.prototxt'>solver</a>
                     
-                    <a disabled>solver</a>
                 </div>
                 <div class='clear-float'></div>
                 <div class='result-topology'>
-                    <div class='result-vis'>
+                    <div class='result-vis' id='svhnC128_1_1_C256_5_1_D1_6_C128_5_1_C512_5_1_D2_6_C256_1_1_C256_5_1_D3_6_P5_3_C128_5_1_D4_6_C128_5_1_C128_5_1_D5_6_C64_1_1_C128_5_1_D6_6_SM10'>
                         <span class='result-vis-inner'>
                             <div class='elt elt-C'>
                                 <div class='elt-type'>C</div>
@@ -846,14 +851,6 @@
                 </div>
             </div>
         </div>
-        <hr>
-
-        <h2 id="mnist"> MNIST </h2>
-        <div class='results'>
-
-            <div class='result-row missing'> Coming Soon </div>
-        </div>
-        <hr>
 
 
         <h2 id='team'> Team </h2>
@@ -861,22 +858,27 @@
         <div class='team-member'>
             <img src='static/team/bowen.jpg'>
             <p> Bowen Baker </p>
+            <p> bowen@mit.edu </p>
         </div>
         <div class='team-member'>
             <img src='static/team/otkrist.jpg'>
             <p> Otkrist Gupta </p>
+            <p> otkrist@mit.edu </p>
         </div>
         <div class='team-member'>
             <img src='static/team/nikhil.jpg'>
             <p> Nikhil Naik </p>
+            <p> naik@mit.edu </p>
         </div>
         <div class='team-member'>
             <img src='static/team/ramesh.jpg'>
             <p> Ramesh Raskar </p>
+            <p> raskar@media.mit.edu </p>
         </div>
         <div class='team-member'>
             <img src='static/team/peter.jpg'>
             <p> Peter Downs </p>
+            <p> downs@mit.edu </p>
         </div>
 
         <script>
