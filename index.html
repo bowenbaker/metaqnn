@@ -13,8 +13,8 @@
         <ul class='nav'>
             <li><a href='#about'> About </a></li>
             <li><a href='#cifar10'> CIFAR10 </a></li>
-            <li><a href='#mnist'> MNIST </a></li>
             <li><a href='#svhn'> SVHN </a></li>
+            <li><a href='#mnist'> MNIST </a></li>
             <li><a href='#team'> Team </a></li>
         </ul>
 
@@ -338,61 +338,6 @@
                     <div class='result-net'>C(128, 5, 1) - C(512, 3, 1) - P(2, 2) - C(128, 1, 1) - C(128, 5, 1) - P(3, 2) - SM(10)</div>
                 </div>
             </div>
-            <div class='result-row'>
-                <div class='result-error'> 9.49% test error </div>
-                <div class='result-files'>
-                    <a href='static/prototxt/cifar10_5.prototxt'>network</a>
-                    
-                    <a href='static/solver/cifar10_5_solver.prototxt'>solver</a>
-                    
-                </div>
-                <div class='clear-float'></div>
-                <div class='result-topology'>
-                    <div class='result-vis' id='cifar10C64_3_1_C64_3_1_D1_3_P5_3_C256_3_1_D2_3_C128_5_1_SM10'>
-                        <span class='result-vis-inner'>
-                            <div class='elt elt-C'>
-                                <div class='elt-type'>C</div>
-                                <div class='elt-info'>(64, 3, 1)</div>
-                            </div>
-                            <div class='elt elt-C'>
-                                <div class='elt-type'>C</div>
-                                <div class='elt-info'>(64, 3, 1)</div>
-                            </div>
-                            <div class='elt elt-D'>
-                                <div class='elt-type'>D</div>
-                                <div class='elt-info'>16.7%</div>
-                            </div>
-                            <div class='elt elt-P'>
-                                <div class='elt-type'>P</div>
-                                <div class='elt-info'>(5, 3)</div>
-                            </div>
-                            <div class='elt elt-C'>
-                                <div class='elt-type'>C</div>
-                                <div class='elt-info'>(256, 3, 1)</div>
-                            </div>
-                            <div class='elt elt-D'>
-                                <div class='elt-type'>D</div>
-                                <div class='elt-info'>33.3%</div>
-                            </div>
-                            <div class='elt elt-C'>
-                                <div class='elt-type'>C</div>
-                                <div class='elt-info'>(128, 5, 1)</div>
-                            </div>
-                            <div class='elt elt-SM'>
-                                <div class='elt-type'>SM</div>
-                                <div class='elt-info'>(10)</div>
-                            </div>
-                        </span>
-                    </div>
-                    <div class='result-net'>C(64, 3, 1) - C(64, 3, 1) - P(5, 3) - C(256, 3, 1) - C(128, 5, 1) - SM(10)</div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <h2 id="mnist"> MNIST </h2>
-        <div class='results'>
-
-            <div class='result-row missing'> Coming Soon </div>
         </div>
         <hr>
         <h2 id='svhn'> SVHN </h2>
@@ -851,7 +796,836 @@
                 </div>
             </div>
         </div>
-
+        <hr>
+        <h2 id="mnist"> MNIST </h2>
+        <div class='results'>
+            <div class='result-row'>
+                <div class='result-error'> 0.44% test error </div>
+                <div class='result-files'>
+                    <a href='static/prototxt/mnist_0.prototxt'>network</a>
+                    
+                    <a href='static/solver/mnist_0_solver.prototxt'>solver</a>
+                    
+                </div>
+                <div class='clear-float'></div>
+                <div class='result-topology'>
+                    <div class='result-vis' id='mnistC512_5_1_C128_5_1_D1_4_C128_5_1_C128_3_1_D2_4_C256_3_1_C512_5_1_D3_4_C256_3_1_C128_3_1_D4_4_SM10'>
+                        <span class='result-vis-inner'>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>12.5%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>25.0%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>37.5%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>50.0%</div>
+                            </div>
+                            <div class='elt elt-SM'>
+                                <div class='elt-type'>SM</div>
+                                <div class='elt-info'>(10)</div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class='result-net'>C(512, 5, 1) - C(128, 5, 1) - C(128, 5, 1) - C(128, 3, 1) - C(256, 3, 1) - C(512, 5, 1) - C(256, 3, 1) - C(128, 3, 1) - SM(10)</div>
+                </div>
+            </div>
+            <div class='result-row'>
+                <div class='result-error'> 0.44% test error </div>
+                <div class='result-files'>
+                    <a href='static/prototxt/mnist_1.prototxt'>network</a>
+                    
+                    <a href='static/solver/mnist_1_solver.prototxt'>solver</a>
+                    
+                </div>
+                <div class='clear-float'></div>
+                <div class='result-topology'>
+                    <div class='result-vis' id='mnistC64_1_1_C256_3_1_D1_6_P2_2_C512_3_1_D2_6_C256_1_1_P5_3_D3_6_C256_3_1_C512_3_1_D4_6_FC512_D5_6_SM10'>
+                        <span class='result-vis-inner'>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(64, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>8.3%</div>
+                            </div>
+                            <div class='elt elt-P'>
+                                <div class='elt-type'>P</div>
+                                <div class='elt-info'>(2, 2)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>16.7%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-P'>
+                                <div class='elt-type'>P</div>
+                                <div class='elt-info'>(5, 3)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>25.0%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>33.3%</div>
+                            </div>
+                            <div class='elt elt-FC'>
+                                <div class='elt-type'>FC</div>
+                                <div class='elt-info'>(512)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>41.7%</div>
+                            </div>
+                            <div class='elt elt-SM'>
+                                <div class='elt-type'>SM</div>
+                                <div class='elt-info'>(10)</div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class='result-net'>C(64, 1, 1) - C(256, 3, 1) - P(2, 2) - C(512, 3, 1) - C(256, 1, 1) - P(5, 3) - C(256, 3, 1) - C(512, 3, 1) - FC(512) - SM(10)</div>
+                </div>
+            </div>
+            <div class='result-row'>
+                <div class='result-error'> 0.38% test error </div>
+                <div class='result-files'>
+                    <a href='static/prototxt/mnist_2.prototxt'>network</a>
+                    
+                    <a href='static/solver/mnist_2_solver.prototxt'>solver</a>
+                    
+                </div>
+                <div class='clear-float'></div>
+                <div class='result-topology'>
+                    <div class='result-vis' id='mnistC64_1_1_C256_5_1_D1_6_C256_5_1_C512_1_1_D2_6_C64_3_1_P5_3_D3_6_C256_5_1_C256_5_1_D4_6_C512_5_1_C64_1_1_D5_6_C128_5_1_C512_5_1_D6_6_SM10'>
+                        <span class='result-vis-inner'>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(64, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>8.3%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>16.7%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(64, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-P'>
+                                <div class='elt-type'>P</div>
+                                <div class='elt-info'>(5, 3)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>25.0%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>33.3%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(64, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>41.7%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>50.0%</div>
+                            </div>
+                            <div class='elt elt-SM'>
+                                <div class='elt-type'>SM</div>
+                                <div class='elt-info'>(10)</div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class='result-net'>C(64, 1, 1) - C(256, 5, 1) - C(256, 5, 1) - C(512, 1, 1) - C(64, 3, 1) - P(5, 3) - C(256, 5, 1) - C(256, 5, 1) - C(512, 5, 1) - C(64, 1, 1) - C(128, 5, 1) - C(512, 5, 1) - SM(10)</div>
+                </div>
+            </div>
+            <div class='result-row'>
+                <div class='result-error'> 0.46% test error </div>
+                <div class='result-files'>
+                    <a href='static/prototxt/mnist_3.prototxt'>network</a>
+                    
+                    <a href='static/solver/mnist_3_solver.prototxt'>solver</a>
+                    
+                </div>
+                <div class='clear-float'></div>
+                <div class='result-topology'>
+                    <div class='result-vis' id='mnistC512_5_1_C128_5_1_D1_4_C128_5_1_C128_1_1_D2_4_P2_2_C512_5_1_D3_4_C256_3_1_C128_3_1_D4_4_SM10'>
+                        <span class='result-vis-inner'>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>12.5%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>25.0%</div>
+                            </div>
+                            <div class='elt elt-P'>
+                                <div class='elt-type'>P</div>
+                                <div class='elt-info'>(2, 2)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>37.5%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>50.0%</div>
+                            </div>
+                            <div class='elt elt-SM'>
+                                <div class='elt-type'>SM</div>
+                                <div class='elt-info'>(10)</div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class='result-net'>C(512, 5, 1) - C(128, 5, 1) - C(128, 5, 1) - C(128, 1, 1) - P(2, 2) - C(512, 5, 1) - C(256, 3, 1) - C(128, 3, 1) - SM(10)</div>
+                </div>
+            </div>
+            <div class='result-row'>
+                <div class='result-error'> 0.55% test error </div>
+                <div class='result-files'>
+                    <a href='static/prototxt/mnist_4.prototxt'>network</a>
+                    
+                    <a href='static/solver/mnist_4_solver.prototxt'>solver</a>
+                    
+                </div>
+                <div class='clear-float'></div>
+                <div class='result-topology'>
+                    <div class='result-vis' id='mnistC256_3_1_C256_5_1_D1_6_C512_3_1_C256_5_1_D2_6_C512_1_1_P5_3_D3_6_C256_3_1_C64_3_1_D4_6_C256_5_1_C512_3_1_D5_6_C128_5_1_C512_5_1_D6_6_SM10'>
+                        <span class='result-vis-inner'>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>8.3%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>16.7%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-P'>
+                                <div class='elt-type'>P</div>
+                                <div class='elt-info'>(5, 3)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>25.0%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(64, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>33.3%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>41.7%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>50.0%</div>
+                            </div>
+                            <div class='elt elt-SM'>
+                                <div class='elt-type'>SM</div>
+                                <div class='elt-info'>(10)</div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class='result-net'>C(256, 3, 1) - C(256, 5, 1) - C(512, 3, 1) - C(256, 5, 1) - C(512, 1, 1) - P(5, 3) - C(256, 3, 1) - C(64, 3, 1) - C(256, 5, 1) - C(512, 3, 1) - C(128, 5, 1) - C(512, 5, 1) - SM(10)</div>
+                </div>
+            </div>
+            <div class='result-row'>
+                <div class='result-error'> 0.43% test error </div>
+                <div class='result-files'>
+                    <a href='static/prototxt/mnist_5.prototxt'>network</a>
+                    
+                    <a href='static/solver/mnist_5_solver.prototxt'>solver</a>
+                    
+                </div>
+                <div class='clear-float'></div>
+                <div class='result-topology'>
+                    <div class='result-vis' id='mnistC64_3_1_C128_3_1_D1_5_C512_1_1_C256_1_1_D2_5_C256_5_1_C128_3_1_D3_5_P5_3_C512_1_1_D4_5_C512_3_1_C128_5_1_D5_5_SM10'>
+                        <span class='result-vis-inner'>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(64, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>10.0%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>20.0%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>30.0%</div>
+                            </div>
+                            <div class='elt elt-P'>
+                                <div class='elt-type'>P</div>
+                                <div class='elt-info'>(5, 3)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>40.0%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>50.0%</div>
+                            </div>
+                            <div class='elt elt-SM'>
+                                <div class='elt-type'>SM</div>
+                                <div class='elt-info'>(10)</div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class='result-net'>C(64, 3, 1) - C(128, 3, 1) - C(512, 1, 1) - C(256, 1, 1) - C(256, 5, 1) - C(128, 3, 1) - P(5, 3) - C(512, 1, 1) - C(512, 3, 1) - C(128, 5, 1) - SM(10)</div>
+                </div>
+            </div>
+            <div class='result-row'>
+                <div class='result-error'> 0.41% test error </div>
+                <div class='result-files'>
+                    <a href='static/prototxt/mnist_6.prototxt'>network</a>
+                    
+                    <a href='static/solver/mnist_6_solver.prototxt'>solver</a>
+                    
+                </div>
+                <div class='clear-float'></div>
+                <div class='result-topology'>
+                    <div class='result-vis' id='mnistC128_3_1_C64_1_1_D1_7_C64_3_1_C64_5_1_D2_7_P2_2_C128_3_1_D3_7_P3_2_C512_3_1_D4_7_FC512_D5_7_FC128_D6_7_SM10'>
+                        <span class='result-vis-inner'>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(64, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>7.1%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(64, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(64, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>14.3%</div>
+                            </div>
+                            <div class='elt elt-P'>
+                                <div class='elt-type'>P</div>
+                                <div class='elt-info'>(2, 2)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>21.4%</div>
+                            </div>
+                            <div class='elt elt-P'>
+                                <div class='elt-type'>P</div>
+                                <div class='elt-info'>(3, 2)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>28.6%</div>
+                            </div>
+                            <div class='elt elt-FC'>
+                                <div class='elt-type'>FC</div>
+                                <div class='elt-info'>(512)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>35.7%</div>
+                            </div>
+                            <div class='elt elt-FC'>
+                                <div class='elt-type'>FC</div>
+                                <div class='elt-info'>(128)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>42.9%</div>
+                            </div>
+                            <div class='elt elt-SM'>
+                                <div class='elt-type'>SM</div>
+                                <div class='elt-info'>(10)</div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class='result-net'>C(128, 3, 1) - C(64, 1, 1) - C(64, 3, 1) - C(64, 5, 1) - P(2, 2) - C(128, 3, 1) - P(3, 2) - C(512, 3, 1) - FC(512) - FC(128) - SM(10)</div>
+                </div>
+            </div>
+            <div class='result-row'>
+                <div class='result-error'> 0.35% test error </div>
+                <div class='result-files'>
+                    <a href='static/prototxt/mnist_7.prototxt'>network</a>
+                    
+                    <a href='static/solver/mnist_7_solver.prototxt'>solver</a>
+                    
+                </div>
+                <div class='clear-float'></div>
+                <div class='result-topology'>
+                    <div class='result-vis' id='mnistC128_3_1_C512_3_1_D1_4_P2_2_C256_3_1_D2_4_C128_5_1_C64_1_1_D3_4_C64_5_1_C512_5_1_D4_4_GAP10_SM10'>
+                        <span class='result-vis-inner'>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>12.5%</div>
+                            </div>
+                            <div class='elt elt-P'>
+                                <div class='elt-type'>P</div>
+                                <div class='elt-info'>(2, 2)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>25.0%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(64, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>37.5%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(64, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>50.0%</div>
+                            </div>
+                            <div class='elt elt-GAP'>
+                                <div class='elt-type'>GAP</div>
+                                <div class='elt-info'>(10)</div>
+                            </div>
+                            <div class='elt elt-SM'>
+                                <div class='elt-type'>SM</div>
+                                <div class='elt-info'>(10)</div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class='result-net'>C(128, 3, 1) - C(512, 3, 1) - P(2, 2) - C(256, 3, 1) - C(128, 5, 1) - C(64, 1, 1) - C(64, 5, 1) - C(512, 5, 1) - GAP(10) - SM(10)</div>
+                </div>
+            </div>
+            <div class='result-row'>
+                <div class='result-error'> 0.40% test error </div>
+                <div class='result-files'>
+                    <a href='static/prototxt/mnist_8.prototxt'>network</a>
+                    
+                    <a href='static/solver/mnist_8_solver.prototxt'>solver</a>
+                    
+                </div>
+                <div class='clear-float'></div>
+                <div class='result-topology'>
+                    <div class='result-vis' id='mnistC64_5_1_C512_5_1_D1_6_P3_2_C256_5_1_D2_6_C256_3_1_C256_3_1_D3_6_C128_1_1_C256_3_1_D4_6_C256_5_1_C64_1_1_D5_6_C256_3_1_C64_3_1_D6_6_SM10'>
+                        <span class='result-vis-inner'>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(64, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>8.3%</div>
+                            </div>
+                            <div class='elt elt-P'>
+                                <div class='elt-type'>P</div>
+                                <div class='elt-info'>(3, 2)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>16.7%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>25.0%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>33.3%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(64, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>41.7%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(64, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>50.0%</div>
+                            </div>
+                            <div class='elt elt-SM'>
+                                <div class='elt-type'>SM</div>
+                                <div class='elt-info'>(10)</div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class='result-net'>C(64, 5, 1) - C(512, 5, 1) - P(3, 2) - C(256, 5, 1) - C(256, 3, 1) - C(256, 3, 1) - C(128, 1, 1) - C(256, 3, 1) - C(256, 5, 1) - C(64, 1, 1) - C(256, 3, 1) - C(64, 3, 1) - SM(10)</div>
+                </div>
+            </div>
+            <div class='result-row'>
+                <div class='result-error'> 0.56% test error </div>
+                <div class='result-files'>
+                    <a href='static/prototxt/mnist_9.prototxt'>network</a>
+                    
+                    <a href='static/solver/mnist_9_solver.prototxt'>solver</a>
+                    
+                </div>
+                <div class='clear-float'></div>
+                <div class='result-topology'>
+                    <div class='result-vis' id='mnistC512_1_1_C128_3_1_D1_6_C128_5_1_C64_1_1_D2_6_C256_5_1_C64_1_1_D3_6_P5_3_C512_1_1_D4_6_C512_3_1_C256_3_1_D5_6_C256_5_1_C256_5_1_D6_6_SM10'>
+                        <span class='result-vis-inner'>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>8.3%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(128, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(64, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>16.7%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(64, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>25.0%</div>
+                            </div>
+                            <div class='elt elt-P'>
+                                <div class='elt-type'>P</div>
+                                <div class='elt-info'>(5, 3)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 1, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>33.3%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(512, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 3, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>41.7%</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-C'>
+                                <div class='elt-type'>C</div>
+                                <div class='elt-info'>(256, 5, 1)</div>
+                            </div>
+                            <div class='elt elt-D'>
+                                <div class='elt-type'>D</div>
+                                <div class='elt-info'>50.0%</div>
+                            </div>
+                            <div class='elt elt-SM'>
+                                <div class='elt-type'>SM</div>
+                                <div class='elt-info'>(10)</div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class='result-net'>C(512, 1, 1) - C(128, 3, 1) - C(128, 5, 1) - C(64, 1, 1) - C(256, 5, 1) - C(64, 1, 1) - P(5, 3) - C(512, 1, 1) - C(512, 3, 1) - C(256, 3, 1) - C(256, 5, 1) - C(256, 5, 1) - SM(10)</div>
+                </div>
+            </div>
+        </div>
 
         <h2 id='team'> Team </h2>
 
