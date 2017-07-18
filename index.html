@@ -23,6 +23,8 @@
 
         <h1 id='about'> About </h1>
         <p>In our paper, <b>Designing Neural Network Architectures Using Reinforcement Learning</b> (<a class='invert' href='https://arxiv.org/abs/1611.02167'>arxiv</a>, <a class='invert' href='http://openreview.net/pdf?id=S1c2cvqee'>openreview</a>), we propose a meta-modeling approach based on reinforcement learning to automatically generate high-performing CNN architectures for a given learning task. The learning agent is trained to sequentially choose CNN layers using Q-learning with an &epsilon;-greedy exploration strategy and experience replay. The agent explores a large but finite space of possible architectures and iteratively discovers designs with improved performance on the learning task. On image classification benchmarks, the agent-designed networks (consisting of only standard convolution, pooling, and fully-connected layers) beat existing networks designed with the same layer types, and are competitive against the state-of-the-art methods that use more complex layer types. We also outperform existing network design meta-modeling approaches on image classification.</p>
+
+        <p>We have just released the full code to run MetaQNN! Find it <a class='invert' href='https://github.com/bowenbaker/metaqnn'>here.</a></p>
         <h2 id='cifar10'> CIFAR10 </h2>
         <div class='results'>
             <div class='result-row'>
